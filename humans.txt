@@ -1,0 +1,6 @@
+/* SITE */
+Name: 06788.com — The Prosperity Number Desk
+Meaning: 你·顺·起·发发 — You rise smoothly into double prosperity
+Standards: HTML5, CSS3, vanilla JavaScript
+Hosting: GitHub Pages
+Contact: https://web.works/contact
