@@ -1,0 +1,48 @@
+---
+layout: default
+title: 'Auspicious Date Finder — Lucky Days for Opening, Wedding & Moving (Tong Shu)'
+desc: 'Find lucky days to open a business, marry, move house or sign contracts. Traditional Tong Shu Twelve Day Officers and clash animals, 2024–2032, filtered for your sign.'
+extra: tools-ui
+---
+<div class="page-hero"><div class="wrap"><div class="crumbs"><a href="index.html">Home</a> › Lucky Dates</div>
+<h1>Auspicious Date Finder</h1><p class="lead">The Chinese almanac (通胜 Tong Shu) gives every day one of <b>Twelve Day Officers</b> and a <b>clash animal</b>. Choose your event and sign, and green days are good to go.</p></div></div>
+<section><div class="wrap layout">
+<div>
+<div class="tool">
+<div class="row" style="grid-template-columns:repeat(3,1fr)">
+<div class="field"><label for="c-month">Month</label><select id="c-month"></select></div>
+<div class="field"><label for="c-event">Event</label><select id="c-event"><option value="opening">Business opening</option><option value="wedding">Wedding</option><option value="moving">Moving house</option><option value="signing">Signing a contract</option><option value="travel">Travel</option><option value="any">General</option></select></div>
+<div class="field"><label for="c-animal">Your sign</label><select id="c-animal"></select></div>
+</div>
+<div style="display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:10px"><button class="btn btn-ghost btn-sm" id="c-prev" type="button">← Prev</button><p id="c-sum" class="small mb0" style="text-align:center;font-weight:600" aria-live="polite"></p><button class="btn btn-ghost btn-sm" id="c-next" type="button">Next →</button></div>
+<div class="cal" id="cal"></div>
+<p class="hint" style="margin-top:10px"><span class="badge b-good">green</span> auspicious for your event · <span class="badge b-bad">red</span> avoid (破 Destruction, 危 Danger, or a day that clashes with your sign) · ⚠ marks the day's clash animal.</p>
+</div>
+<div id="c-detail" class="mt" aria-live="polite"></div>
+<div class="ad" data-slot="afterTool">Advertisement</div>
+<div class="prose">
+<h2>The Twelve Day Officers (建除十二神)</h2>
+<div class="tbl-wrap"><table><thead><tr><th>Officer</th><th>Best for</th><th>Avoid</th></tr></thead><tbody>
+<tr><td>建 Establish</td><td>Planning, study, meetings</td><td>Digging, moving</td></tr>
+<tr><td>除 Remove</td><td>Cleaning, medical care</td><td>Weddings</td></tr>
+<tr><td>满 Full</td><td>Openings, collecting money</td><td>Lawsuits</td></tr>
+<tr><td>平 Balanced</td><td>Repairs, routine work</td><td>Major events</td></tr>
+<tr><td>定 Stable</td><td>Contracts, engagements, hiring</td><td>Lawsuits, travel</td></tr>
+<tr><td>执 Initiate</td><td>Building, planting</td><td>Moving, travel</td></tr>
+<tr><td>破 Destruction</td><td>Demolition only</td><td>Almost everything</td></tr>
+<tr><td>危 Danger</td><td>Worship, quiet work</td><td>Risky travel, heights</td></tr>
+<tr><td>成 Success</td><td>Openings, weddings, launches</td><td>Lawsuits</td></tr>
+<tr><td>收 Receive</td><td>Collecting debts, buying</td><td>Funerals</td></tr>
+<tr><td>开 Open</td><td>Grand openings, new jobs, travel</td><td>Burials</td></tr>
+<tr><td>闭 Close</td><td>Closing deals, saving</td><td>Openings, surgery</td></tr>
+</tbody></table></div>
+<p>The officer comes from the relationship between the day's Earthly Branch and the solar month (which begins at the solar terms, such as 立春 Start of Spring). Day pillars are calculated from the Julian Day Number. Solar-term dates for 2024–2032 are built in.</p>
+<div class="callout"><b>Big day coming up?</b> A professional date selection also considers both people's birth charts and the hour. <a href="desk.html?intent=date">Request a personal date reading →</a></div>
+<h2>FAQ</h2>
+<details><summary>What is the luckiest day to open a business?</summary><p>Traditionally a 成 (Success), 开 (Open), 满 (Full) or 定 (Stable) day that doesn't clash with the owner's zodiac sign. Many owners also pick a date containing 8.</p></details>
+<details><summary>Why is a day marked red for me but green for others?</summary><p>Every day clashes with one animal (the day's opposite branch). If it's yours, the day is marked red for you even when its officer is good.</p></details>
+<details><summary>How accurate is this calendar?</summary><p>Day pillars and officers match the standard almanac for 2024–2032. It is a cultural guide, not a guarantee. For weddings and major launches many families also consult a master.</p></details>
+</div>
+</div>
+<aside class="aside"><div class="card"><h3>Opening soon?</h3><p class="small">Get an opening date, a lucky price list and a launch plan for Chinese-speaking customers.</p><a class="btn btn-red btn-sm" href="desk.html?intent=date">Book the Desk →</a></div><div class="ad ad-tall" data-slot="sidebar">Advertisement</div></aside>
+</div></section>

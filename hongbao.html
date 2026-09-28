@@ -1,0 +1,45 @@
+---
+layout: default
+title: 'Hongbao Calculator — How Much to Put in a Red Envelope (Lucky Amounts)'
+desc: 'Red envelope (hongbao / lai see) calculator for Chinese New Year, weddings, birthdays and openings. Lucky amounts by relationship, plus etiquette and numbers to avoid.'
+extra: tools-ui
+---
+<div class="page-hero"><div class="wrap"><div class="crumbs"><a href="index.html">Home</a> › Hongbao</div>
+<h1>Hongbao (Red Envelope) Calculator 🧧</h1><p class="lead">How much should you put in the red envelope? Choose the relationship and occasion and get lucky amounts. Weddings get even amounts, and nothing contains a 4.</p></div></div>
+<section><div class="wrap layout">
+<div>
+<form class="tool" id="hbform">
+<div class="row">
+<div class="field"><label for="rel">Recipient</label><select id="rel" name="rel"><option value="child">Child (own / close family)</option><option value="niece">Niece, nephew, friend's child</option><option value="parent">Parent</option><option value="elder">Grandparent / elder</option><option value="employee">Employee / staff</option><option value="colleague">Colleague</option><option value="friend">Friend</option></select></div>
+<div class="field"><label for="occ">Occasion</label><select id="occ" name="occ"><option value="cny">Chinese New Year</option><option value="wedding">Wedding</option><option value="birthday">Birthday</option><option value="baby">New baby / full month</option><option value="opening">Business opening</option><option value="funeral">Funeral (帛金)</option></select></div>
+</div>
+<div class="row">
+<div class="field"><label for="budget">Max budget <span class="hint">(optional)</span></label><input id="budget" name="budget" type="number" min="1" placeholder="e.g. 200"></div>
+<div class="field"><label for="cur">Currency</label><select id="cur" name="cur"><option value="$">$ (USD/CAD/SGD/AUD)</option><option value="HK$">HK$</option><option value="¥">¥ RMB</option><option value="RM">RM</option><option value="£">£</option><option value="₹">₹</option></select></div>
+</div>
+<button class="btn btn-red" type="submit">Get lucky amounts</button>
+<div id="hbres" class="mt" aria-live="polite"></div>
+</form>
+<div class="ad" data-slot="afterTool">Advertisement</div>
+<div class="prose">
+<h2>Red envelope etiquette</h2>
+<ul>
+<li><b>Never include a 4</b>: 40, 400 and 444 all sound like death.</li>
+<li><b>Weddings:</b> even amounts (好事成双, “good things come in pairs”). Many guests aim to at least cover their own banquet seat.</li>
+<li><b>Funerals</b> are the exception: a white envelope with an odd amount (for example 101).</li>
+<li>Use <b>new, crisp notes</b>. Give and receive with both hands, and don't open the envelope in front of the giver.</li>
+<li>Married adults give to unmarried juniors at Chinese New Year. Bosses give to staff.</li>
+</ul>
+<h2>Typical amounts (Chinese New Year)</h2>
+<div class="tbl-wrap"><table><thead><tr><th>Recipient</th><th>Typical</th><th>Generous</th></tr></thead><tbody>
+<tr><td>Friend's child</td><td>68 – 88</td><td>128 – 168</td></tr><tr><td>Own child / close niece</td><td>88 – 168</td><td>288+</td></tr>
+<tr><td>Parents</td><td>888</td><td>1,688 – 2,888</td></tr><tr><td>Staff</td><td>88 – 168</td><td>288+</td></tr>
+</tbody></table></div>
+<p class="hint">Values are unit-neutral. Scale them to local norms (a HK$ lai see is usually smaller than an RMB hongbao).</p>
+<h2>FAQ</h2>
+<details><summary>How much should I give at a Chinese wedding?</summary><p>Enough to cover your seat at the banquet, in an even amount with lucky digits, such as 388, 688 or 888. Close family often gives 1,688 or more.</p></details>
+<details><summary>Can I send a digital hongbao?</summary><p>Yes. WeChat and Alipay red packets are now standard. The same number rules apply: 66.66, 88.88 and 168 are popular amounts.</p></details>
+</div>
+</div>
+<aside class="aside"><div class="card"><span class="tag">Sponsored slot</span><h3>Your brand here</h3><p class="small">Red envelopes, gifts, CNY décor: reach buyers at the moment they spend.</p><a class="btn btn-ghost btn-sm" href="advertise.html">Advertise →</a></div><div class="ad ad-tall" data-slot="sidebar">Advertisement</div></aside>
+</div></section>
