@@ -1,0 +1,53 @@
+---
+layout: default
+title: 'Lucky Number Analyzer — Score Any Phone, Plate or Price'
+desc: 'Free Chinese lucky number calculator. Get a 0–99 prosperity score, digit meanings, lucky combinations, collector patterns and zodiac match for any number.'
+extra: tools-ui
+report: true
+---
+<div class="page-hero"><div class="wrap"><div class="crumbs"><a href="index.html">Home</a> › Analyzer</div>
+<h1>Lucky Number Analyzer</h1><p class="lead">Paste any phone number, car plate, address, price, bank-card tail or date. You get an instant prosperity score, the meaning of every digit, famous combinations, collector patterns and your zodiac fit.</p></div></div>
+<section><div class="wrap layout">
+<div>
+<form class="tool" id="analyzer" data-kind="phone number" aria-label="Lucky number analyzer">
+<div class="chips" role="group" aria-label="Number type" style="margin-bottom:12px">
+<button type="button" class="chip" data-type="phone number" data-ph="e.g. 138 0013 8000" aria-pressed="true">📱 Phone</button>
+<button type="button" class="chip" data-type="car plate" data-ph="e.g. 8868" aria-pressed="false">🚗 Plate</button>
+<button type="button" class="chip" data-type="address" data-ph="e.g. 1688" aria-pressed="false">🏠 Address</button>
+<button type="button" class="chip" data-type="price" data-ph="e.g. 1288" aria-pressed="false">🏷️ Price</button>
+<button type="button" class="chip" data-type="date" data-ph="e.g. 20261028" aria-pressed="false">📅 Date</button>
+<button type="button" class="chip" data-type="domain / brand number" data-ph="e.g. 06788" aria-pressed="false">🌐 Domain</button>
+</div>
+<div class="row"><div class="field"><label for="an-num">Your number</label><input class="bigin" id="an-num" inputmode="numeric" autocomplete="off" placeholder="e.g. 138 0013 8000" required></div>
+<div class="field"><label for="an-year">Birth year <span class="hint">(optional)</span></label><input id="an-year" type="number" min="1920" max="2030" placeholder="e.g. 1990"></div></div>
+<button class="btn btn-red" type="submit">Score my number</button>
+<p class="hint" style="margin-top:10px">Examples: <button class="chip" type="button" data-try="06788">06788</button> <button class="chip" type="button" data-try="5201314">5201314</button> <button class="chip" type="button" data-try="86688">86688</button> <button class="chip" type="button" data-try="0412345674">0412 345 674</button></p>
+<div class="result" id="an-result" aria-live="polite"></div>
+</form>
+
+<div class="prose mt">
+<h2>How the Prosperity Score works</h2>
+<p>Every digit has a traditional weight based on what it sounds like in Mandarin and Cantonese. <b>8</b> (发, prosper) scores highest, then <b>6</b> (顺, smooth) and <b>9</b> (久, lasting). <b>4</b> (死, death) scores lowest. The <b>last digit counts extra</b>, because it's the one people remember.</p>
+<ul>
+<li><b>Combinations</b> such as 168 (一路发, “prosperity all the way”), 518 (我要发, “I will prosper”) and 1314 (一生一世, “forever”) add large bonuses. Negative ones such as 14 (要死), 74 (气死) and 250 (a fool) subtract.</li>
+<li><b>Collector patterns</b> (AAAA runs, ABAB repeats, ABBA mirrors, AABB pairs, rising sequences and palindromes) raise the market tier.</li>
+<li><b>Zodiac match</b>: add a birth year and we check how many digits are traditional lucky numbers for your animal.</li>
+</ul>
+<div class="ad" data-slot="inContent">Advertisement</div>
+<h2>Market tiers</h2>
+<div class="tbl-wrap"><table><thead><tr><th>Tier</th><th>Typical pattern</th><th>Who buys</th></tr></thead><tbody>
+<tr><td><span class="badge b-gold">Collector</span></td><td>8888, 88888, five-of-a-kind</td><td>Collectors, luxury brands, auction bidders</td></tr>
+<tr><td><span class="badge b-gold">Golden</span></td><td>AAAA runs (6666, 9999)</td><td>Businesses, VIP phone lines</td></tr>
+<tr><td><span class="badge b-good">Premium</span></td><td>168, 518, 6688, ABAB/ABBA with 8s</td><td>Shops, agents, sales teams</td></tr>
+<tr><td><span class="badge b-warn">Standard</span></td><td>Everything else</td><td>Everyday use</td></tr>
+</tbody></table></div>
+<div class="callout red"><b>Own a Golden or Collector number?</b> It may be worth far more than you think. Plates like “28” and “18” sold for HK$18.1M and HK$16.5M. <a href="desk.html?intent=value">Get a free valuation →</a></div>
+<h2>FAQ</h2>
+<details><summary>Does the analyzer work for non-Chinese phone numbers?</summary><p>Yes. The meanings come from sound, so any digit string works: US, UK, Canadian, Indian, Singaporean, Hong Kong or mainland numbers, plates and prices.</p></details>
+<details><summary>Should I include the country code?</summary><p>Score the part people see and dial. Most people judge the last 8 digits, and the ending counts most.</p></details>
+<details><summary>My number has a 4. Is it bad?</summary><p>It lowers the score, but context matters. In 1314 (一生一世, forever) and 3344 (生生世世, lifetime after lifetime) the 4 reads positively, and the analyzer takes that into account.</p></details>
+<details><summary>Can you find me a luckier number?</summary><p>Yes. Use “Email me the full report” or the Prosperity Desk and a specialist will send alternatives you can buy.</p></details>
+</div>
+</div>
+<aside class="aside"><div class="card"><h3>Selling or buying?</h3><p class="small">Get a free valuation or sourcing help from a number specialist.</p><a class="btn btn-red btn-sm" href="desk.html?intent=value">Prosperity Desk →</a></div><div class="ad ad-tall" data-slot="sidebar">Advertisement</div></aside>
+</div></section>
