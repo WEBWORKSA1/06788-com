@@ -1,0 +1,89 @@
+---
+layout: default
+title: 'The Prosperity Desk — Value, Buy or Sell Lucky Numbers & Book Date Readings'
+desc: 'Free first consultation: value or sell a lucky plate or phone number, source an 8888 number or domain, pick an auspicious date, or price and market to Chinese-speaking customers.'
+extra: tools-ui
+---
+<section class="hero" style="padding-bottom:40px"><div class="wrap split" style="align-items:start">
+<div>
+<span class="eyebrow">The Prosperity Desk</span>
+<h1>Turn numbers into money and good timing.</h1>
+<p class="lead">One form, the right specialist. Brokers value and sell golden plates and phone numbers. Masters pick wedding and opening dates. Marketers price and launch for Chinese-speaking customers.</p>
+<div class="grid g2 mt">
+<div class="card"><div class="ico">💰</div><h3>Value &amp; sell</h3><p class="small">Plates, phone numbers, domains and addresses. Free estimate, buyer outreach.</p></div>
+<div class="card"><div class="ico">🔍</div><h3>Source &amp; buy</h3><p class="small">8888-style phone lines, plates, numeric domains and unit numbers.</p></div>
+<div class="card"><div class="ico">📅</div><h3>Date selection</h3><p class="small">Openings, weddings, moving and signing, matched to birth charts.</p></div>
+<div class="card"><div class="ico">🏮</div><h3>Market entry</h3><p class="small">Lucky pricing, bilingual naming, CNY campaigns, WeChat and RED.</p></div>
+</div>
+<div class="stats mt" style="grid-template-columns:repeat(3,1fr)"><div class="stat"><b>30s</b><span>to request</span></div><div class="stat"><b>1–2</b><span>business days to reply</span></div><div class="stat"><b>$0</b><span>first consultation</span></div></div>
+</div>
+
+<div class="tool" style="position:sticky;top:84px">
+<div id="desk-done" style="display:none"><div class="center"><div style="font-size:3rem">🧧</div><h2>Request received!</h2><p>A specialist will reply by email within 1–2 business days.</p></div>
+<ol class="list small"><li>Check your inbox (and the spam folder) for our reply.</li><li>Collect any photos, documents or dates you have.</li><li>While you wait, <a href="analyzer.html">score more numbers</a> or <a href="calendar.html">browse lucky dates</a>.</li></ol>
+<button class="btn btn-gold btn-sm" type="button" data-share="I just used the free 06788 Prosperity Desk to value my lucky number:">Share 06788</button></div>
+
+<form id="deskform" novalidate>
+<div style="display:flex;justify-content:space-between"><b>Free consultation</b><span class="hint" id="step-lbl">Step 1 of 3</span></div>
+<div class="progress" aria-hidden="true"><i></i></div>
+<input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+<fieldset class="step on" style="border:0;padding:0;margin:0"><legend class="lbl" style="margin-bottom:10px">What can we help with?</legend>
+<div class="intent">
+<label><input type="radio" name="intent" value="value" required> 💰 Value / sell a number</label>
+<label><input type="radio" name="intent" value="buy"> 🔍 Buy a lucky number</label>
+<label><input type="radio" name="intent" value="date"> 📅 Pick a lucky date</label>
+<label><input type="radio" name="intent" value="fengshui"> 🏮 Feng shui / naming</label>
+<label><input type="radio" name="intent" value="market"> 📈 Pricing &amp; marketing</label>
+<label><input type="radio" name="intent" value="partner"> 🤝 Sponsor / partner</label>
+</div>
+<button class="btn btn-red mt" type="button" data-next style="width:100%">Continue →</button>
+</fieldset>
+
+<fieldset class="step" style="border:0;padding:0;margin:0"><legend class="lbl" style="margin-bottom:10px">A few details</legend>
+<div data-for="value buy">
+<div class="row"><div class="field"><label for="d-type">Type</label><select id="d-type" name="number_type"><option>Car plate</option><option>Phone number</option><option>Domain name</option><option>Address / unit</option><option>Other</option></select></div>
+<div class="field"><label for="d-region">Region</label><select id="d-region" name="region"><option>Hong Kong</option><option>Mainland China</option><option>Singapore</option><option>Malaysia</option><option>Taiwan</option><option>USA / Canada</option><option>UK / Europe</option><option>Australia / NZ</option><option>India</option><option>Other</option></select></div></div>
+<div class="field"><label for="d-num">The number <span class="hint">(or the pattern you want)</span></label><input id="d-num" name="number" placeholder="e.g. 8868 or any 8888 ending" required></div>
+</div>
+<div data-for="value"><div class="field"><label for="d-ask">Expected price <span class="hint">(optional)</span></label><input id="d-ask" name="asking_price" placeholder="e.g. HK$ 500,000 or unsure"></div></div>
+<div data-for="buy"><div class="field"><label for="d-bud">Budget</label><select id="d-bud" name="budget"><option>Under $500</option><option>$500 – $5,000</option><option>$5,000 – $50,000</option><option>$50,000+</option></select></div></div>
+<div data-for="date">
+<div class="row"><div class="field"><label for="d-ev">Event</label><select id="d-ev" name="event"><option>Business opening</option><option>Wedding</option><option>Moving house</option><option>Contract signing</option><option>Surgery / other</option></select></div>
+<div class="field"><label for="d-dw">Around which date?</label><input id="d-dw" name="date_wanted" type="date" required></div></div>
+<div class="field"><label for="d-by">Birth date(s) of people involved</label><input id="d-by" name="birth_dates" placeholder="e.g. 1990-05-12, 1992-11-03"></div>
+</div>
+<div data-for="fengshui"><div class="field"><label for="d-fs">What needs attention?</label><select id="d-fs" name="fengshui_need"><option>Business / brand name</option><option>Home or office layout</option><option>Personal Bazi reading</option><option>Baby name</option></select></div></div>
+<div data-for="market"><div class="row"><div class="field"><label for="d-co">Company / website</label><input id="d-co" name="company" required></div>
+<div class="field"><label for="d-mk">Target market</label><select id="d-mk" name="target_market"><option>Mainland China</option><option>Hong Kong / Macau</option><option>Singapore / Malaysia</option><option>Chinese diaspora (NA / UK / AU)</option></select></div></div></div>
+<div data-for="partner"><div class="row"><div class="field"><label for="d-pc">Company</label><input id="d-pc" name="company" required></div>
+<div class="field"><label for="d-pt">Interest</label><select id="d-pt" name="partner_type"><option>Advertising</option><option>Sponsor a tool / contest</option><option>Affiliate / referral</option><option>Buy this website / domain</option><option>Content partnership</option></select></div></div></div>
+<div class="field"><label for="d-msg">Anything else? <span class="hint">(optional)</span></label><textarea id="d-msg" name="message" placeholder="Timeline, goals, questions…"></textarea></div>
+<div class="btns"><button class="btn btn-ghost" type="button" data-back>← Back</button><button class="btn btn-red" type="button" data-next style="flex:1">Continue →</button></div>
+</fieldset>
+
+<fieldset class="step" style="border:0;padding:0;margin:0"><legend class="lbl" style="margin-bottom:10px">Where should we reply?</legend>
+<div class="field"><label for="d-name">Full name</label><input id="d-name" name="name" autocomplete="name" required></div>
+<div class="field"><label for="d-email">Email</label><input id="d-email" type="email" name="email" autocomplete="email" required></div>
+<div class="row"><div class="field"><label for="d-wa">WhatsApp / WeChat <span class="hint">(optional)</span></label><input id="d-wa" name="whatsapp_wechat" autocomplete="tel"></div>
+<div class="field"><label for="d-t">Best time</label><select id="d-t" name="best_time"><option>Any time</option><option>Morning</option><option>Afternoon</option><option>Evening</option></select></div></div>
+<label class="check"><input type="checkbox" name="consent" value="yes" required> I agree to be contacted about this request and accept the <a href="privacy.html">Privacy Policy</a>.</label>
+<div class="btns mt"><button class="btn btn-ghost" type="button" data-back>← Back</button><button class="btn btn-red" type="submit" style="flex:1">Get my free consultation</button></div>
+<div class="form-msg" role="status"></div>
+</fieldset>
+</form>
+</div>
+</div></section>
+
+<section class="sec-alt"><div class="wrap">
+<h2 class="center">Why people come to the Desk</h2>
+<div class="grid g3 mt">
+<div class="card"><h3>“What's my plate worth?”</h3><p class="small">Single-letter and two-digit plates in Hong Kong have sold for HK$5M–26M. Pattern plates and phone numbers regularly sell for four to six figures.</p></div>
+<div class="card"><h3>“When should we open?”</h3><p class="small">Families and businesses book opening and wedding dates months ahead. A clash day can spoil a launch in customers' eyes.</p></div>
+<div class="card"><h3>“Will this price work?”</h3><p class="small">A menu, price list or unit number with 4s puts off buyers. Small numeric fixes can lift conversion with Chinese-speaking audiences.</p></div>
+</div>
+<h2 class="mt">FAQ</h2>
+<details><summary>Is the first consultation really free?</summary><p>Yes. We reply with a first assessment and, where relevant, introduce you to a specialist, who quotes separately before any paid work.</p></details>
+<details><summary>Do you buy numbers directly?</summary><p>We connect sellers with brokers and buyers. We do not hold inventory, and valuations are estimates.</p></details>
+<details><summary>What happens to my details?</summary><p>They go only to the 06788 team to answer your request. We never sell personal data. See the <a href="privacy.html">Privacy Policy</a>.</p></details>
+</div></section>
