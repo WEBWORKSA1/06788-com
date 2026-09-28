@@ -1,0 +1,48 @@
+---
+layout: default
+title: 'Support 06788 — Donate to Keep the Tools Free'
+desc: 'Support 06788.com with a one-time or monthly donation. Funds go to operations, promotion and marketing, hiring writers and editors, and contest prizes.'
+extra: tools-ui
+---
+<div class="page-hero"><div class="wrap"><div class="crumbs"><a href="index.html">Home</a> › Support</div>
+<h1>Support 06788 ♥</h1><p class="lead">Every tool here is free. Your support pays for servers, new tools, promotion, talented contributors and prizes for the community. Every tier is a lucky number.</p></div></div>
+<section><div class="wrap split" style="align-items:start">
+<div class="tool">
+<div class="chips" role="group" aria-label="Frequency" style="margin-bottom:14px"><button type="button" class="chip" data-freq="one-time" aria-pressed="true">One-time</button><button type="button" class="chip" data-freq="monthly" aria-pressed="false">Monthly</button></div>
+<div class="tiers" id="tiers">
+<button type="button" class="tier" data-amt="8"><b>$8</b><small>发 Prosper</small></button>
+<button type="button" class="tier on" data-amt="18"><b>$18</b><small>实发 Sure win</small></button>
+<button type="button" class="tier" data-amt="68"><b>$68</b><small>路发 On the road</small></button>
+<button type="button" class="tier" data-amt="88"><b>$88</b><small>发发 Double</small></button>
+<button type="button" class="tier" data-amt="168"><b>$168</b><small>一路发 All the way</small></button>
+</div>
+<div class="field mt"><label for="d-custom">Or a custom amount (USD)</label><input id="d-custom" type="number" min="1" placeholder="e.g. 288"></div>
+<p class="lbl">Your gift: <span id="d-sum" class="num">$18 one-time</span></p>
+<div class="btns" id="paybtns"></div>
+<p class="hint" style="margin-top:10px">Payments are processed by the provider you choose. We never see your card details. Need a receipt or invoice? Mention it in the pledge form.</p>
+</div>
+<div>
+<h2>Where your money goes</h2>
+<div class="grid" style="gap:14px">
+<div><div style="display:flex;justify-content:space-between"><b>Operations &amp; hosting</b><span>30%</span></div><div class="bar"><i style="width:30%"></i></div></div>
+<div><div style="display:flex;justify-content:space-between"><b>Promotion &amp; marketing</b><span>25%</span></div><div class="bar"><i style="width:25%"></i></div></div>
+<div><div style="display:flex;justify-content:space-between"><b>Hiring writers, editors &amp; developers</b><span>30%</span></div><div class="bar"><i style="width:30%"></i></div></div>
+<div><div style="display:flex;justify-content:space-between"><b>Contest prizes</b><span>15%</span></div><div class="bar"><i style="width:15%"></i></div></div>
+</div>
+<div class="card mt"><h3>Supporter perks</h3><ul class="list small"><li>$18+: name on the Supporter Wall</li><li>$68+: an early look at new tools</li><li>$88+ monthly: ad-free supporter mode (coming soon)</li><li>$168+: a Premium Number Report on request</li></ul></div>
+</div>
+</div></section>
+<section class="sec-alt" id="pledge"><div class="wrap split" style="align-items:start">
+<div><h2>Pledge form</h2><p>Prefer bank transfer, a company invoice, or to sponsor something specific (a tool, a contest or a video)? Send a pledge and we'll reply with payment details.</p>
+<h3>Supporter Wall</h3><p class="small">Founding supporters will be listed here. Be the first! 🧧</p></div>
+<form class="tool js-form" id="pledgeform" data-subject="Donation pledge" data-ok="Thank you! We'll reply with payment details shortly.">
+<input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+<input type="hidden" name="amount" value="18"><input type="hidden" name="frequency" value="one-time">
+<div class="row"><div class="field"><label for="pl-n">Name</label><input id="pl-n" name="name" required autocomplete="name"></div><div class="field"><label for="pl-e">Email</label><input id="pl-e" type="email" name="email" required autocomplete="email"></div></div>
+<div class="field"><label for="pl-f">Direct my support to</label><select id="pl-f" name="fund"><option>Wherever it's needed most</option><option>Operations &amp; hosting</option><option>Promotion &amp; marketing</option><option>Hiring talent</option><option>Contest prizes</option></select></div>
+<div class="field"><label for="pl-m">Note <span class="hint">(optional)</span></label><textarea id="pl-m" name="message" placeholder="Invoice details, wall name, etc."></textarea></div>
+<label class="check"><input type="checkbox" name="show_on_wall" value="yes"> Show my name on the Supporter Wall</label>
+<button class="btn btn-red mt" type="submit" style="width:100%">Send pledge</button><div class="form-msg" role="status"></div>
+</form>
+</div></section>
+<script>document.addEventListener("DOMContentLoaded",function(){var a=+new URLSearchParams(location.search).get("a");if(!a)return;var t=document.querySelector('.tier[data-amt="'+a+'"]');if(t)t.click();});</script>
